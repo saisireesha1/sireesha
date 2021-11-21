@@ -1,0 +1,64 @@
+<html>
+<head>
+<script>
+var cars = new Array("BMW", "Hundai", "Honda", "Maruthi", "Tata", "Mahindra");
+Array.prototype.displayItems=function(){
+for (i=0;i<this.length;i++){
+document.write(this[i] + "<br />");
+}
+}
+document.write("cars array<br />");
+cars.displayItems();
+
+document.write("<br />The REVERSED cars array<br />");
+ cars.reverse(); cars.displayItems();
+
+document.write("<br />The number of items in cars array is " +
+cars.length + "<br />");
+
+
+cars.pop(); cars.displayItems();
+
+document.write("<br />THE cars array after PUSH<br />");
+cars.push("Range Rover"); cars.displayItems();
+
+document.write("<br />THE cars array after shift<br />");
+cars.shift("Range Rover"); cars.displayItems();
+
+document.write("<br />THE cars array after unshift<br />");
+cars.unshift("Range Rover"); cars.displayItems();
+
+document.write("<br />THE cars array after splice<br />");
+cars.splice("mg"); cars.displayItems();
+
+document.write("<br />THE cars array after slice<br />");
+cars.slice("1,2"); cars.displayItems();
+</script>
+<body>
+<!--
+[12:14] Jayashree R.
+Create a array of Cars  and dis play the outpu
+
+[12:15] Jayashree R.
+reverse the array and display
+
+[12:16] Jayashree R.
+Display array length
+
+[12:18] Jayashree R.
+Use push & pop method & display the output
+
+[12:19] Jayashree R.
+use shift method & display output
+
+[12:19] Jayashree R.
+use unshift method & display output
+
+[12:20] Jayashree R.
+use Splice method and add 2 more cars to the array
+
+[12:21] Jayashree R.
+use slice method and  display the output
+</body>-->
+
+</html>
